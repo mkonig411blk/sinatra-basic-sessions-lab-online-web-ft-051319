@@ -3,8 +3,8 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   
   
-  get '/hey' do 
-    @session = session
+  get '/' do 
+    erb :index
   end
   configure do
     enable :sessions
